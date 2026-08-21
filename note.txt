@@ -1,0 +1,11 @@
+Since your script uses ESM import syntax, you need a package.json present with "type": "module", and npm needs a package.json to install into. 
+If you never ran npm init, do:
+
+--bash
+cd D:\VSCode\jsws\testpg_6
+npm init -y
+npm install cobrowse-agent-sdk jsonwebtoken
+
+Then open the generated package.json and add:
+--json
+"type": "module"
